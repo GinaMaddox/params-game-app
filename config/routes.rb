@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   # verb "/urls" => "namespace/controllers#action"
   namespace :api do
   get "/query_parameter_url" => "games#query_parameter_action"
+  get "/query_guessing_game" => "games#query_guessing_game"
+  get "/segment_guessing_game/:guess" => "games#segment_guessing_game"
   end
 end
 
